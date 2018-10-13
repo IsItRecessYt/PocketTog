@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "236007623689",
+    "firebase_url": "https://pocket-tog.firebaseio.com",
+    "project_id": "pocket-tog",
+    "storage_bucket": "pocket-tog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236007623689:android:ecb38167d9535926",
+        "android_client_info": {
+          "package_name": "com.galloway.pockettog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236007623689-4s2bcatd9hq1kmqp91ko4nthrjj6o1tj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.galloway.pockettog",
+            "certificate_hash": "695c8f59c297119bf9cbcb5dd3c4a8488c1cb6ef"
+          }
+        },
+        {
+          "client_id": "236007623689-1qhs1kt4uss56sfke2vgom8q8h5l6eh0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCInShPDU_v_e2GwxvWQ2emhCoFXZrsdiM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236007623689-1qhs1kt4uss56sfke2vgom8q8h5l6eh0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

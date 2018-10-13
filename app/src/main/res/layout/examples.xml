@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Examples">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/title_example1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/walkInThePark"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/description_example1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/before"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/picture1"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/example1unedited" />
+
+
+            <TextView
+                android:id="@+id/title_example2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/walkInThePark"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/description_example2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:text="@string/after"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/picture2"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/example1edited" />
+
+
+            <TextView
+                android:id="@+id/title_example3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/beachDay"
+                android:textSize="30sp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/description_example3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/before"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/picture3"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/example2unedited" />
+
+
+            <TextView
+                android:id="@+id/title_example4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/beachDay"
+                android:textSize="30sp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/description_example4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/after"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/picture4"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/example2edited" />
+
+
+            <TextView
+                android:id="@+id/title_example5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/sassy"
+                android:textSize="30sp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/description_example5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/before"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/picture5"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/example3unedited" />
+
+
+            <TextView
+                android:id="@+id/title_example6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/sassy"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/description_example6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/after"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/picture6"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/example3edited" />
+
+
+            <TextView
+                android:id="@+id/title_example7"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/seaOfDew"
+                android:textSize="30sp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/description_example7"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/before"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/picture7"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/example4unedited" />
+
+
+            <TextView
+                android:id="@+id/title_example8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/seaOfDew"
+                android:textSize="30sp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/description_example8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/after"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/picture8"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/example4edited" />
+
+
+            <TextView
+                android:id="@+id/title_example9"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/bigHaul"
+                android:textSize="30sp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/description_example9"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/before"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/picture9"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/example5unedited" />
+
+
+            <TextView
+                android:id="@+id/title_example10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/bigHaul"
+                android:textSize="30sp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/description_example10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/after"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/picture10"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="60dp"
+                app:srcCompat="@drawable/example5edited" />
+
+        </LinearLayout>
+    </ScrollView>
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </FrameLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.FitWindowsLinearLayout>

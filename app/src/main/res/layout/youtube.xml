@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/main_content_below"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="75dp">
+
+                    <TextView
+                        android:id="@+id/title1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="20dp"
+                        android:text="@string/youtubeVideoTitle1"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/description1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/youtubeVideoDesc1" />
+
+                    <ImageButton
+                        android:id="@+id/imageView1"
+                        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/youtubeVideo1"
+                        android:paddingBottom="30dp"
+                        app:srcCompat="@drawable/video1" />
+
+                    <TextView
+                        android:id="@+id/title2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textSize="20sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:text="@string/youtubeVideoTitle2" />
+
+                    <TextView
+                        android:id="@+id/description2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:text="@string/youtubeVideoDesc2" />
+
+                    <ImageButton
+                        android:id="@+id/imageView2"
+                        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/youtubeVideo2"
+                        android:paddingBottom="30dp"
+                        app:srcCompat="@drawable/video2" />
+
+                    <TextView
+                        android:id="@+id/title3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textSize="20sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:text="@string/youtubeVideoTitle3" />
+
+                    <TextView
+                        android:id="@+id/description3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:text="@string/youtubeVideoDesc3" />
+
+                    <ImageButton
+                        android:id="@+id/imageView3"
+                        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/youtubeVideo3"
+                        android:paddingBottom="30dp"
+                        app:srcCompat="@drawable/video3" />
+
+                    <TextView
+                        android:id="@+id/title4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textSize="20sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:text="@string/youtubeVideoTitle4" />
+
+                    <TextView
+                        android:id="@+id/description4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:text="@string/youtubeVideoDesc4" />
+
+                    <ImageButton
+                        android:id="@+id/imageView4"
+                        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/youtubeVideo4"
+                        android:paddingBottom="30dp"
+                        app:srcCompat="@drawable/video4" />
+
+                    <TextView
+                        android:id="@+id/title5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textSize="20sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:text="@string/youtubeVideoTitle5" />
+
+                    <TextView
+                        android:id="@+id/description5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:text="@string/youtubeVideoDesc5" />
+
+                    <ImageButton
+                        android:id="@+id/imageView5"
+                        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/youtubeVideo5"
+                        android:paddingBottom="100dp"
+                        app:srcCompat="@drawable/video5" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.FitWindowsLinearLayout>

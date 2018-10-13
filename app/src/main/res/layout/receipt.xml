@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Receipt">
+
+    <RelativeLayout
+        android:id="@+id/main_content_below"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logo"
+            android:maxHeight="200dp"
+            android:maxWidth="400dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/thanksSubmission"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/thanksSubmission"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="170dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/receiptText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/receiptText"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="210dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/reference"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/reference"
+            android:textSize="14sp"
+            android:gravity="start"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="325dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/emailAddress"
+            android:textSize="14sp"
+            android:gravity="start"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="370dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Button
+            android:id="@+id/selectAgainButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal|center"
+            android:background="#4095D5"
+            android:paddingBottom="0dp"
+            android:text="@string/selectAnotherPhoto"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:drawableEnd="@drawable/go_arrow"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.FitWindowsLinearLayout>

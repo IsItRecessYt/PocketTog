@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SelectPhoto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/main_content_below"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/rememberTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:text="@string/rememberTitle"
+            android:textSize="34sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="50dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/rememberSubmission"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:text="@string/rememberSubmission"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="120dp"
+            android:paddingLeft="40dp"
+            android:paddingStart="40dp"
+            android:paddingRight="40dp"
+            android:paddingEnd="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+        <LinearLayout
+            android:layout_height="65dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/selectPhoto"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_weight="1"
+                android:background="#4095D5"
+                android:drawableEnd="@drawable/go_arrow"
+                android:paddingBottom="0dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingStart="120dp"
+                android:paddingEnd="80dp"
+                android:text="@string/selectPhoto"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container">
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.FitWindowsLinearLayout>

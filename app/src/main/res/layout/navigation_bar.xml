@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="55dp"
+    android:background="#4095D5"
+    tools:context=".NavigationBar">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="55dp"
+        android:layout_height="55dp">
+
+        <ImageButton
+            android:id="@+id/hamburgerMenu"
+            style="@android:style/Widget.DeviceDefault.ImageButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:background="#4095D5"
+            android:contentDescription="@string/hamburger_menu"
+            app:srcCompat="@drawable/hamburger_menu" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <include layout="@layout/background"/>
+
+</android.support.v7.widget.FitWindowsLinearLayout>

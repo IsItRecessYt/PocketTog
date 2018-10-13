@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.FitWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HelpfulHints">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/main_content_below"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/helpfulHintsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"
+            android:text="@string/helpfulHintsTitle"
+            android:textSize="34sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="50dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/helpfulHintsCount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"
+            android:text="@string/helpfulHintsCounts"
+            android:textSize="28sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="100dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/helpfulHintsText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"
+            android:text="@string/helpfulHintsText0"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="160dp"
+            android:paddingLeft="40dp"
+            android:paddingStart="40dp"
+            android:paddingRight="40dp"
+            android:paddingEnd="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+        <LinearLayout
+            android:layout_height="65dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/backButton"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_weight="1"
+                android:background="#C7C9CB"
+                android:drawableStart="@drawable/back_arrow"
+                android:paddingBottom="0dp"
+                android:paddingEnd="25dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingStart="25dp"
+                android:text="@string/back"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/letsGo"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_weight="1"
+                android:background="#4095D5"
+                android:drawableEnd="@drawable/go_arrow"
+                android:paddingBottom="0dp"
+                android:paddingEnd="25dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingStart="25dp"
+                android:text="@string/letsGo"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container">
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.FitWindowsLinearLayout>

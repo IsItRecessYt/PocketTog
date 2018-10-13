@@ -1,0 +1,80 @@
+<resources>pictureToUpload
+    <string name="app_name">Pocket Tog</string>
+    <string name="action_settings">Settings</string>
+    <string name="thanks">Thanks!</string>
+    <string name="hamburger_menu">Hamburger menu icon</string>
+    <string name="background">Background image</string>
+    <string name="home">Home</string>
+    <string name="home_image">Home Image</string>
+    <string name="help">Helpful Hints</string>
+    <string name="examples">Examples</string>
+    <string name="youtube">YouTube</string>
+    <string name="visitUs">Visit us on our social media platforms</string>
+    <string name="submitPhoto">Submit Photo</string>
+    <string name="socialMediaSection">Contains facebook, youtube, and twitter icons</string>
+    <string name="helpfulHintsTitle">Helpful Hints</string>
+    <string name="helpfulHintsCounts">0/4</string>
+    <string name="letsGo">Let\'s Go!</string>
+    <string name="back">Back</string>
+    <string name="selectPhoto">Select Photo</string>
+    <string name="rememberTitle">Remember!</string>
+    <string name="thanksSubmission">Thanks for your submission!</string>
+    <string name="youtubeVideoTitle1">5 Tips to INSTANTLY up your PHOTO GAME</string>
+    <string name="youtubeVideoTitle2">6 Portrait Photography Tips you must know!</string>
+    <string name="youtubeVideoTitle3">5 AMAZING Photography Tips To Transform Your Pictures!</string>
+    <string name="youtubeVideoTitle4">7 SIMPLE photography TIPS I wish I knew EARLIER</string>
+    <string name="youtubeVideoTitle5">10 Tips for better photos with the Nikon D3400</string>
+    <string name="youtubeVideoDesc1">Check out these 5 tips to help capture the perfect moment.</string>
+    <string name="youtubeVideoDesc2">Jessica shows us photography tips for mobile devices</string>
+    <string name="youtubeVideoDesc3">Trasnfrom your lighting on the mobile device by using these 4 tips</string>
+    <string name="youtubeVideoDesc4">7 tips that we havent shown you yet.</string>
+    <string name="youtubeVideoDesc5">Dont use the Nikon D3400, unless you really have to.</string>
+    <string name="youtubeVideo1">Youtube video 1</string>
+    <string name="youtubeVideo2">Youtube video 2</string>
+    <string name="youtubeVideo3">Youtube video 3</string>
+    <string name="youtubeVideo4">Youtube video 4</string>
+    <string name="youtubeVideo5">Youtube video 5</string>
+    <string name="receiptText">Your submission will be edited and returned to your email within 14 business days, depending on demand.</string>
+    <string name="selectAnotherPhoto">Select Another Image</string>
+    <string name="reference">Reference Number: </string>
+    <string name="emailAddress">Email Address: </string>
+    <string name="logo">Logo</string>
+    <string name="hint0">Start Over</string>
+    <string name="pictureToUpload">Picture to upload</string>
+    <string name="hint1">Hint 1</string>
+    <string name="hint2">Hint 2</string>
+    <string name="hint3">Hint 3</string>
+    <string name="hint4">Hint 4</string>
+    <string name="picture1">Picture 1</string>
+    <string name="picture2">Picture 2</string>
+    <string name="picture3">Picture 3</string>
+    <string name="picture4">Picture 4</string>
+    <string name="picture5">Picture 5</string>
+    <string name="picture6">Picture 6</string>
+    <string name="picture7">Picture 7</string>
+    <string name="picture8">Picture 8</string>
+    <string name="picture9">Picture 9</string>
+    <string name="picture10">Picture 10</string>
+    <string name="before">Before</string>
+    <string name="after">After</string>
+    <string name="walkInThePark">A Walk in the Park</string>
+    <string name="beachDay">Beach Day</string>
+    <string name="sassy">Sassy!</string>
+    <string name="seaOfDew">A Sea of Dew</string>
+    <string name="bigHaul">A Big Haul</string>
+    <string name="rememberSubmission">No edited photos\n
+                                    No stretched images\n
+                                    Not too bright, not too dark\n
+                                    Each photo will be professionally edited for $5\n
+                                    \n
+                                    For more information before submitting your first photo - look at examples, read the helpful hints, and watch our YouTube channel</string>
+    <string name="helpfulHintsText0">Here at Pocket Tog, we are dedicated to giving you the best possible products money can get you. Here are some hints at how to achieve a great
+        looking photo!</string>
+    <string name="helpfulHintsText1">Do not enlarge your picture before sending. Stretched images distort pixels and make editing very difficult.</string>
+    <string name="helpfulHintsText2">Lighting is essential to every photographers tool suite. If your image is too bright or too dark, then the photo will not be changed much.</string>
+    <string name="helpfulHintsText3">Modern day cell phones have editing tools that allow users to edit their own photos. While this is a good alternative to Pocket Tog, the tools do not
+        come with the expertise that Pocket Tog does. With that said, please make sure that photos submitted are unedited. Let the professionals do the editing.We promise to edit every
+        photo you send us, but sometimes the before and after are not as different as expected.</string>
+    <string name="helpfulHintsText4">Obscene or crude materials are not accepted at Pocket Tog. Any photo that is submitted, reviewed, and deemed pornographic or offensive will not be
+        edited and discarded. Continued misuse of the app will block transactions from the offending users email.</string>
+</resources>
