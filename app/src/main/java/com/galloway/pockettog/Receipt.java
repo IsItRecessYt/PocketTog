@@ -38,15 +38,12 @@ public class Receipt extends BaseActivity {
         submitAnotherPhoto = findViewById(R.id.selectAgainButton);
         myIntent = getIntent();
         String email = myIntent.getStringExtra("emailAddress");
-        String reference = myIntent.getStringExtra("confirmationCode");
         selectPhotoIntent = new Intent(this, SelectPhoto.class);
 
         TextView emailTv = findViewById(R.id.email);
         TextView referenceTv = findViewById(R.id.reference);
         String newEmail = emailTv.getText() + " " + email;
-        String newReference = referenceTv.getText() + " " + reference;
         emailTv.setText(newEmail);
-        referenceTv.setText(newReference);
 
         submitAnotherPhoto.setOnClickListener(new View.OnClickListener(){
             @Override

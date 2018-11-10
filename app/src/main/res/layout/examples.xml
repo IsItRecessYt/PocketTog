@@ -12,6 +12,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+    <RelativeLayout
+        android:id="@+id/main_content_below"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -355,11 +360,11 @@
 
         </LinearLayout>
     </ScrollView>
+    </RelativeLayout>
         <FrameLayout
-            android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="match_parent"
+            android:id="@+id/container">
         </FrameLayout>
     </RelativeLayout>
 

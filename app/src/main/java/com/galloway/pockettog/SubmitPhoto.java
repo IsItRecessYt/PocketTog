@@ -1,5 +1,6 @@
 package com.galloway.pockettog;
 
+import android.accounts.AccountManager;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -17,7 +18,8 @@ import android.widget.ImageView;
 
 import com.anjlab.android.iab.v3.BillingProcessor;
 import com.anjlab.android.iab.v3.TransactionDetails;
-
+import com.google.android.gms.auth.GoogleAuthUtil;
+import com.google.android.gms.common.AccountPicker;
 
 
 import java.io.File;
@@ -38,6 +40,7 @@ public class SubmitPhoto extends BaseActivity implements BillingProcessor.IBilli
     Intent myIntent;
     Uri selectedImageUri;
     ImageView ivPicture;
+    String email;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -53,6 +56,7 @@ public class SubmitPhoto extends BaseActivity implements BillingProcessor.IBilli
         InputStream inputStream;
         Drawable bg;
         receiptIntent = new Intent(this, Receipt.class);
+
 
         try {
             selectedImageUri = URI.parse(selectedImageUriString);
@@ -70,7 +74,9 @@ public class SubmitPhoto extends BaseActivity implements BillingProcessor.IBilli
         submitPhoto.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                new AsyncBillingCall().execute("");
+                Intent googlePicker = AccountPicker.newChooseAccountIntent(null, null, new String[]{GoogleAuthUtil.GOOGLE_ACCOUNT_TYPE},
+                        true, null, null, null, null);
+                startActivityForResult(googlePicker, 100);
             }
         });
 
@@ -103,8 +109,7 @@ public class SubmitPhoto extends BaseActivity implements BillingProcessor.IBilli
             try {
 
                 bp.purchase(SubmitPhoto.this, "android.test.purchased");
-                receiptIntent.putExtra("confirmationCode", "0000946259");
-                receiptIntent.putExtra("emailAddress", "StevenPaulGalloway@gmail.com");
+                receiptIntent.putExtra("emailAddress", email);
                 return "";
             }catch(Exception e){
                 e.printStackTrace();
@@ -131,10 +136,19 @@ public class SubmitPhoto extends BaseActivity implements BillingProcessor.IBilli
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
-    if (!bp.handleActivityResult(requestCode, resultCode, data)){
-        super.onActivityResult(requestCode, resultCode, data);
-    }
-        bp.consumePurchase("android.test.purchased");
+
+        if(requestCode!=100) {
+            if (!bp.handleActivityResult(requestCode, resultCode, data)) {
+                super.onActivityResult(requestCode, resultCode, data);
+            }
+
+            bp.consumePurchase("android.test.purchased");
+        }else {
+            if(resultCode == RESULT_OK) {
+                email = data.getStringExtra(AccountManager.KEY_ACCOUNT_NAME);
+                new AsyncBillingCall().execute("");
+            }
+        }
     }
 
     public void hideFragment(){

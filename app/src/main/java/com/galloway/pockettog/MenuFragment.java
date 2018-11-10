@@ -35,9 +35,9 @@ public class MenuFragment extends Fragment {
         final Intent helpIntent = new Intent(getActivity(), HelpfulHints.class);
         final Intent examplesIntent = new Intent(getActivity(), Examples.class);
         final Intent youtubeIntent = new Intent(getActivity(), Youtube.class);
-        final Intent youtubeSocialIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com"));
-        final Intent twitterIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.twitter.com"));
-        final Intent facebookIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com"));
+        final Intent youtubeSocialIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UCd-RhS_o0jUqkuHj7qLRPbg"));
+        final Intent twitterIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.twitter.com/TogPocket"));
+        final Intent facebookIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.facebook.com/PocketTog"));
 
         closeButton.setOnClickListener(new View.OnClickListener(){
             @Override

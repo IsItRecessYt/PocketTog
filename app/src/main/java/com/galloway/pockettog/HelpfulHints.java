@@ -83,7 +83,7 @@ public class HelpfulHints extends BaseActivity {
         if(moveForward) {
             switch(helpNumber) {
                 case 0:
-                    hintNumber.setText("1/4");
+                    hintNumber.setText("1/5");
                     hintText.setText(getResources().getString(R.string.helpfulHintsText1));
                     backButton.setVisibility(View.VISIBLE);
                     hintText.startAnimation(animation);
@@ -91,28 +91,35 @@ public class HelpfulHints extends BaseActivity {
                     letsGo.setText(getResources().getString(R.string.hint2));
                     break;
                 case 1:
-                    hintNumber.setText("2/4");
+                    hintNumber.setText("2/5");
                     hintText.setText(getResources().getString(R.string.helpfulHintsText2));
                     hintText.startAnimation(animation);
                     hintNumber.startAnimation(animation);
                     letsGo.setText(getResources().getString(R.string.hint3));
                     break;
                 case 2:
-                    hintNumber.setText("3/4");
+                    hintNumber.setText("3/5");
                     hintText.setText(getResources().getString(R.string.helpfulHintsText3));
                     hintText.startAnimation(animation);
                     hintNumber.startAnimation(animation);
                     letsGo.setText(getResources().getString(R.string.hint4));
                     break;
                 case 3:
-                    hintNumber.setText("4/4");
+                    hintNumber.setText("4/5");
                     hintText.setText(getResources().getString(R.string.helpfulHintsText4));
+                    hintText.startAnimation(animation);
+                    hintNumber.startAnimation(animation);
+                    letsGo.setText(getResources().getString(R.string.hint5));
+                    break;
+                case 4:
+                    hintNumber.setText("5/5");
+                    hintText.setText(getResources().getString(R.string.helpfulHintsText5));
                     hintText.startAnimation(animation);
                     hintNumber.startAnimation(animation);
                     letsGo.setText(getResources().getString(R.string.hint0));
                     break;
-                case 4:
-                    hintNumber.setText("0/4");
+                case 5:
+                    hintNumber.setText("0/5");
                     hintText.setText(getResources().getString(R.string.helpfulHintsText0));
                     backButton.setVisibility(View.GONE);
                     hintText.startAnimation(animation);
@@ -153,6 +160,13 @@ public class HelpfulHints extends BaseActivity {
                 case 4:
                     hintNumber.setText("3/4");
                     hintText.setText(getResources().getString(R.string.helpfulHintsText3));
+                    hintText.startAnimation(animation);
+                    hintNumber.startAnimation(animation);
+                    letsGo.setText(getResources().getString(R.string.hint4));
+                    break;
+                case 5:
+                    hintNumber.setText("4/5");
+                    hintText.setText(getResources().getString(R.string.helpfulHintsText4));
                     hintText.startAnimation(animation);
                     hintNumber.startAnimation(animation);
                     letsGo.setText(getResources().getString(R.string.hint4));

@@ -51,18 +51,6 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
         <TextView
-            android:id="@+id/reference"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/reference"
-            android:textSize="14sp"
-            android:gravity="start"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:paddingTop="325dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-
-        <TextView
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

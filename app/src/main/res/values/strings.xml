@@ -9,11 +9,11 @@
     <string name="help">Helpful Hints</string>
     <string name="examples">Examples</string>
     <string name="youtube">YouTube</string>
-    <string name="visitUs">Visit us on our social media platforms</string>
+    <string name="visitUs">Click to visit us on our social media platforms</string>
     <string name="submitPhoto">Submit Photo</string>
     <string name="socialMediaSection">Contains facebook, youtube, and twitter icons</string>
     <string name="helpfulHintsTitle">Helpful Hints</string>
-    <string name="helpfulHintsCounts">0/4</string>
+    <string name="helpfulHintsCounts">0/5</string>
     <string name="letsGo">Let\'s Go!</string>
     <string name="back">Back</string>
     <string name="selectPhoto">Select Photo</string>
@@ -34,7 +34,7 @@
     <string name="youtubeVideo3">Youtube video 3</string>
     <string name="youtubeVideo4">Youtube video 4</string>
     <string name="youtubeVideo5">Youtube video 5</string>
-    <string name="receiptText">Your submission will be edited and returned to your email within 14 business days, depending on demand.</string>
+    <string name="receiptText">Your submission will be edited and returned to your email within 15 business days, depending on demand.</string>
     <string name="selectAnotherPhoto">Select Another Image</string>
     <string name="reference">Reference Number: </string>
     <string name="emailAddress">Email Address: </string>
@@ -45,6 +45,7 @@
     <string name="hint2">Hint 2</string>
     <string name="hint3">Hint 3</string>
     <string name="hint4">Hint 4</string>
+    <string name="hint5">Hint 5</string>
     <string name="picture1">Picture 1</string>
     <string name="picture2">Picture 2</string>
     <string name="picture3">Picture 3</string>
@@ -62,19 +63,15 @@
     <string name="sassy">Sassy!</string>
     <string name="seaOfDew">A Sea of Dew</string>
     <string name="bigHaul">A Big Haul</string>
-    <string name="rememberSubmission">No edited photos\n
-                                    No stretched images\n
-                                    Not too bright, not too dark\n
-                                    Each photo will be professionally edited for $5\n
-                                    \n
-                                    For more information before submitting your first photo - look at examples, read the helpful hints, and watch our YouTube channel</string>
-    <string name="helpfulHintsText0">Here at Pocket Tog, we are dedicated to giving you the best possible products money can get you. Here are some hints at how to achieve a great
+    <string name="rememberSubmission">By submitting your photo to Pocket Tog, you confirm that you have read the helpful hints, looked at our examples, and know the product that we are offering. </string>
+    <string name="helpfulHintsText0">Here at Pocket Tog, we are \n
+        dedicated to giving you the best possible photographic services money can get you. Here are some hints on how to achieve a great
         looking photo!</string>
-    <string name="helpfulHintsText1">Do not enlarge your picture before sending. Stretched images distort pixels and make editing very difficult.</string>
-    <string name="helpfulHintsText2">Lighting is essential to every photographers tool suite. If your image is too bright or too dark, then the photo will not be changed much.</string>
-    <string name="helpfulHintsText3">Modern day cell phones have editing tools that allow users to edit their own photos. While this is a good alternative to Pocket Tog, the tools do not
-        come with the expertise that Pocket Tog does. With that said, please make sure that photos submitted are unedited. Let the professionals do the editing.We promise to edit every
-        photo you send us, but sometimes the before and after are not as different as expected.</string>
-    <string name="helpfulHintsText4">Obscene or crude materials are not accepted at Pocket Tog. Any photo that is submitted, reviewed, and deemed pornographic or offensive will not be
-        edited and discarded. Continued misuse of the app will block transactions from the offending users email.</string>
+    <string name="helpfulHintsText1">Do not enlarge your picture before sending. Stretched images will distort images making them blurry.</string>
+    <string name="helpfulHintsText2">Lighting is essential to every photographer. If you can see good detail, then our editors can help bring out those details.</string>
+    <string name="helpfulHintsText3">Photos should be unedited, please do not submit photos that have been pre-edited. The addition of emojis, text overlay, and other photo manipulation tactics
+        should wait until after you have received your photo back.</string>
+    <string name="helpfulHintsText4">Obscene or crude materials are not accepted at Pocket Tog. Any photo that is submitted and deemed pornographic or offensive will not be
+        edited and will be discarded. Continued misuse of the app will block transactions from the offending users email.</string>
+    <string name="helpfulHintsText5">Any photo that breaks the law will be subject to legal recourse. Please do not send photos that could get you in trouble with the law.</string>
 </resources>
