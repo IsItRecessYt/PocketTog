@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.anjlab.android.iab.v3.BillingProcessor;
 import com.anjlab.android.iab.v3.TransactionDetails;
@@ -39,6 +40,16 @@ public class Youtube extends BaseActivity {
     ImageButton video3;
     ImageButton video4;
     ImageButton video5;
+    TextView videoDesc1;
+    TextView videoDesc2;
+    TextView videoDesc3;
+    TextView videoDesc4;
+    TextView videoDesc5;
+    TextView videoTitle1;
+    TextView videoTitle2;
+    TextView videoTitle3;
+    TextView videoTitle4;
+    TextView videoTitle5;
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -50,13 +61,40 @@ public class Youtube extends BaseActivity {
         video3 = findViewById(R.id.imageView3);
         video4 = findViewById(R.id.imageView4);
         video5 = findViewById(R.id.imageView5);
-        video1Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=Cb5bjlnDkCs"));
-        video2Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=FBz81ssJV7g"));
-        video3Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=qtxOvWndYfg"));
-        video4Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=jAk_xhs0Rcw"));
-        video5Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=YtzK6zX7adU"));
+        videoDesc1 = findViewById(R.id.description1);
+        videoDesc2 = findViewById(R.id.description2);
+        videoDesc3 = findViewById(R.id.description3);
+        videoDesc4 = findViewById(R.id.description4);
+        videoDesc5 = findViewById(R.id.description5);
+        videoTitle1 = findViewById(R.id.title1);
+        videoTitle2 = findViewById(R.id.title2);
+        videoTitle3 = findViewById(R.id.title3);
+        videoTitle4 = findViewById(R.id.title4);
+        videoTitle5 = findViewById(R.id.title5);
+        video1Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/"));
+        video2Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/"));
+        video3Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/"));
+        video4Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/"));
+        video5Intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/"));
+
+        video2.setVisibility(View.GONE);
+        videoTitle2.setVisibility(View.GONE);
+        videoDesc2.setVisibility(View.GONE);
 
 
+        video3.setVisibility(View.GONE);
+        videoTitle3.setVisibility(View.GONE);
+        videoDesc3.setVisibility(View.GONE);
+
+
+        video4.setVisibility(View.GONE);
+        videoTitle4.setVisibility(View.GONE);
+        videoDesc4.setVisibility(View.GONE);
+
+
+        video5.setVisibility(View.GONE);
+        videoTitle5.setVisibility(View.GONE);
+        videoDesc5.setVisibility(View.GONE);
 
         video1.setOnClickListener(new View.OnClickListener(){
             @Override

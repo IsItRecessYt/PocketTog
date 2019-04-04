@@ -43,7 +43,6 @@ public class MenuFragment extends Fragment {
             @Override
             public void onClick(View v){
 
-                System.out.println(getActivity().getClass().getSimpleName());
                 String name = getActivity().getClass().getSimpleName();
                 switch(name) {
                     case "HomePage":

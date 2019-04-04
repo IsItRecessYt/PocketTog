@@ -1,12 +1,17 @@
 package com.galloway.pockettog;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
@@ -32,6 +37,10 @@ public class SelectPhoto extends BaseActivity {
     Intent selectPhotoIntent;
     Intent homeIntent;
     Intent submitPhotoIntent;
+    long lastDown;
+    long lastDuration;
+    int permissionCheck;
+
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -49,13 +58,29 @@ public class SelectPhoto extends BaseActivity {
         selectPhotoIntent = new Intent();
         submitPhotoIntent = new Intent(this, SubmitPhoto.class);
         selectPhotoIntent.setType("image/*");
+        selectPhotoIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
         selectPhotoIntent.setAction(Intent.ACTION_GET_CONTENT);
+        permissionCheck  = ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.READ_EXTERNAL_STORAGE);
+        if (Build.VERSION.SDK_INT >= 23) {
+            if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
+                checkPermissions();
+            }
+        }
 
 
         selectPhoto.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivityForResult(Intent.createChooser(selectPhotoIntent, "Select A Picture To Send For Edits"),SELECT_IMAGE_RESULT_REQUEST_CODE);
+                if (Build.VERSION.SDK_INT >= 23) {
+                    permissionCheck  = ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.READ_EXTERNAL_STORAGE);
+                    if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
+                        checkPermissions();
+                    }else{
+                        startActivityForResult(Intent.createChooser(selectPhotoIntent, "Select A Picture To Send For Edits"), SELECT_IMAGE_RESULT_REQUEST_CODE);
+                    }
+                }else{
+                    startActivityForResult(Intent.createChooser(selectPhotoIntent, "Select A Picture To Send For Edits"), SELECT_IMAGE_RESULT_REQUEST_CODE);
+                }
             }
         });
 
@@ -75,6 +100,10 @@ public class SelectPhoto extends BaseActivity {
 
             }
         });
+    }
+
+    public void checkPermissions(){
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
     }
 
     public void hideFragment(){
@@ -137,7 +166,7 @@ public class SelectPhoto extends BaseActivity {
     }
 
     public void swipeLeft(){
-        startActivityForResult(Intent.createChooser(selectPhotoIntent, "Select A Picture To Send For Edits"),SELECT_IMAGE_RESULT_REQUEST_CODE);
+        startActivityForResult(Intent.createChooser(selectPhotoIntent, "Select Picture To Send For Edit"),SELECT_IMAGE_RESULT_REQUEST_CODE);
     }
 
     public void swipeRight(){

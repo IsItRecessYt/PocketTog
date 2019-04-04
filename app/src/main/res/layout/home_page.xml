@@ -35,11 +35,11 @@
             android:background="#4095D5"
             android:paddingBottom="0dp"
             android:text="@string/submitPhoto"
-            android:paddingStart="120dp"
-            android:paddingEnd="80dp"
+            android:paddingStart="80dp"
+            android:paddingEnd="40dp"
             android:drawableEnd="@drawable/go_arrow"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
         </RelativeLayout>
 
         <FrameLayout

@@ -17,9 +17,9 @@
             android:id="@+id/ivPicture"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="65dp"
             android:contentDescription="@string/pictureToUpload"
             android:foregroundGravity="center"
+            android:gravity="center"
             android:scaleType="centerCrop"
             android:adjustViewBounds="false"/>
 

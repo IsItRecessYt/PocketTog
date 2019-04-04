@@ -16,15 +16,19 @@
     <string name="helpfulHintsCounts">0/5</string>
     <string name="letsGo">Let\'s Go!</string>
     <string name="back">Back</string>
-    <string name="selectPhoto">Select Photo</string>
+    <string name="selectPhoto">I agree/Select Photo</string>
+    <string name="selectPhotoDisabled">Submit Not Available</string>
+    <string name="testTitle">We\'re Testing!</string>
+    <string name="testNotification">Thank you for downloading Pocket Tog. We are currently testing and will be live soon. </string>
+    <string name="testConfirmation">Keep Togging!</string>
     <string name="rememberTitle">Remember!</string>
     <string name="thanksSubmission">Thanks for your submission!</string>
-    <string name="youtubeVideoTitle1">5 Tips to INSTANTLY up your PHOTO GAME</string>
+    <string name="youtubeVideoTitle1">What is Pocket Tog?</string>
     <string name="youtubeVideoTitle2">6 Portrait Photography Tips you must know!</string>
     <string name="youtubeVideoTitle3">5 AMAZING Photography Tips To Transform Your Pictures!</string>
     <string name="youtubeVideoTitle4">7 SIMPLE photography TIPS I wish I knew EARLIER</string>
     <string name="youtubeVideoTitle5">10 Tips for better photos with the Nikon D3400</string>
-    <string name="youtubeVideoDesc1">Check out these 5 tips to help capture the perfect moment.</string>
+    <string name="youtubeVideoDesc1">So you want to know what Pocket Tog is all about?.</string>
     <string name="youtubeVideoDesc2">Jessica shows us photography tips for mobile devices</string>
     <string name="youtubeVideoDesc3">Trasnfrom your lighting on the mobile device by using these 4 tips</string>
     <string name="youtubeVideoDesc4">7 tips that we havent shown you yet.</string>
@@ -34,7 +38,7 @@
     <string name="youtubeVideo3">Youtube video 3</string>
     <string name="youtubeVideo4">Youtube video 4</string>
     <string name="youtubeVideo5">Youtube video 5</string>
-    <string name="receiptText">Your submission will be edited and returned to your email within 15 business days, depending on demand.</string>
+    <string name="receiptText">Your submission will be edited and returned to your email. Our editors are doing their best to get you quality product as soon as possible.</string>
     <string name="selectAnotherPhoto">Select Another Image</string>
     <string name="reference">Reference Number: </string>
     <string name="emailAddress">Email Address: </string>
@@ -63,15 +67,19 @@
     <string name="sassy">Sassy!</string>
     <string name="seaOfDew">A Sea of Dew</string>
     <string name="bigHaul">A Big Haul</string>
-    <string name="rememberSubmission">By submitting your photo to Pocket Tog, you confirm that you have read the helpful hints, looked at our examples, and know the product that we are offering. </string>
+    <string name="rememberSubmission">By submitting your photo to Pocket Tog, you confirm: \n \n
+        I have read helpful hints. \n \n
+        My photo will not be stretched, enlarged, or blurry. \n \n
+        My photo is not pornographic or illegal. \n \n
+        </string>
     <string name="helpfulHintsText0">Here at Pocket Tog, we are \n
         dedicated to giving you the best possible photographic services money can get you. Here are some hints on how to achieve a great
         looking photo!</string>
-    <string name="helpfulHintsText1">Do not enlarge your picture before sending. Stretched images will distort images making them blurry.</string>
-    <string name="helpfulHintsText2">Lighting is essential to every photographer. If you can see good detail, then our editors can help bring out those details.</string>
-    <string name="helpfulHintsText3">Photos should be unedited, please do not submit photos that have been pre-edited. The addition of emojis, text overlay, and other photo manipulation tactics
+    <string name="helpfulHintsText1">Do not enlarge your picture before submitting to Pocket Tog. Stretched images will be distorted, making them blurry after editing.</string>
+    <string name="helpfulHintsText2">Lighting of a photo can be adjusted, but photos with extreme lighting issues will not be good candidates for submission.</string>
+    <string name="helpfulHintsText3">Photos should be unedited, please do not submit photos that have been edited by another professional. The addition of emojis, text overlay, and other photo manipulation tactics
         should wait until after you have received your photo back.</string>
     <string name="helpfulHintsText4">Obscene or crude materials are not accepted at Pocket Tog. Any photo that is submitted and deemed pornographic or offensive will not be
-        edited and will be discarded. Continued misuse of the app will block transactions from the offending users email.</string>
+        edited and will be discarded. Continued misuse of the app will block transactions from the offending user.</string>
     <string name="helpfulHintsText5">Any photo that breaks the law will be subject to legal recourse. Please do not send photos that could get you in trouble with the law.</string>
 </resources>

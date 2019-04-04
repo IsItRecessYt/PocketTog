@@ -1,19 +1,28 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'upload'
+            keyPassword '911Fire!'
+            storeFile file('C:/Users/mrfre/Desktop/keystores/upload-keystrore.jks')
+            storePassword 'SPGb1989'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.galloway.pockettog"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "PocketTogTest"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
 }
@@ -27,9 +36,10 @@ dependencies {
     implementation 'com.android.support:support-annotations:28.0.0'
     implementation files('libs/simpleftp.jar')
     implementation 'com.anjlab.android.iab.v3:library:1.0.44'
-    implementation 'com.google.firebase:firebase-auth:16.0.3'
-    implementation 'com.google.firebase:firebase-core:16.0.3'
-    implementation 'com.google.android.gms:play-services-auth:16.0.0'
+    implementation 'com.google.firebase:firebase-auth:16.1.0'
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.microsoft.azure.android:azure-storage-android:0.3.0@aar'
     testImplementation 'junit:junit:4.12'
 }
 apply plugin: 'com.google.gms.google-services'

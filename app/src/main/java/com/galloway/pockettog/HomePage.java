@@ -2,6 +2,7 @@ package com.galloway.pockettog;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -23,6 +24,8 @@ public class HomePage extends BaseActivity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        DialogFragment td = new TestDialog();
+        td.show(getSupportFragmentManager(),"test");
         initAddlayout(R.layout.home_page);
         submitButton = findViewById(R.id.submitButton);
         hamburgerMenu = findViewById(R.id.menu_icon);
